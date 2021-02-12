@@ -5,13 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+
+static char *font = "SFMono Nerd Font:pixelsize=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Noto Color Emoji Font:pixelsize=11:antialias=true:autohint=true";
-};
-
-static int borderpx = 2;
+	"Noto Color Emoji Font:pixelsize=11:antialias=true:autohint=true"};
+static int borderpx = 5;
 
 /*
  * What program is execed by st depends of these precedence rules:
