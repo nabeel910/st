@@ -102,32 +102,53 @@ float alpha = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
 
+	/* 8 normal colors */
+//	"black",
+//	"red3",
+//	"green3",
+//	"yellow3",
+//	"blue2",
+//	"magenta3",
+//	"cyan3",
+//	"gray90",
+	"#1c1c1c",
+	"#bc5653",
+	"#909d63",
+	"#ebc17a",
+	"#4FA2BF",
+	"#FF87D7",
+	"#86d3ce",
+	"#cacaca",
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+//	"gray50",
+//	"red",
+//	"green",
+//	"yellow",
+//	"#5c5cff",
+//	"magenta",
+//	"cyan",
+//	"white",
+
+	"#636363",
+	"#bc5653",
+	"#909d63",
+	"#ebc17a",
+	"#4FA2BF",
+	"#FF87D7",
+	"#86d3ce",
+	"#f7f7f7",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+<<<<<<< HEAD
 	"black",
+=======
+	"#232323",
+>>>>>>> config
 };
 
 
