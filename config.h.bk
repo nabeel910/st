@@ -95,90 +95,32 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-
-//start nord theme
-
 	/* 8 normal colors */
-//	"#3b4252", /* black   */
-//	"#bf616a", /* red     */
-//	"#a3be8c", /* green   */
-//	"#ebcb8b", /* yellow  */
-//	"#81a1c1", /* blue    */
-//	"#b48ead", /* magenta */
-//	"#88c0d0", /* cyan    */
-//	"#e5e9f0", /* white   */
+	"#3b4252", /* black   */
+	"#bf616a", /* red     */
+	"#a3be8c", /* green   */
+	"#ebcb8b", /* yellow  */
+	"#81a1c1", /* blue    */
+	"#b48ead", /* magenta */
+	"#88c0d0", /* cyan    */
+	"#e5e9f0", /* white   */
 
 	/* 8 bright colors */
-//	"#4c566a", /* black   */
-//	"#bf616a", /* red     */
-//	"#a3be8c", /* green   */
-//	"#ebcb8b", /* yellow  */
-//	"#81a1c1", /* blue    */
-//	"#b48ead", /* magenta */
-//	"#8fbcbb", /* cyan    */
-//	"#eceff4", /* white   */
-//	above is nord
+	"#4c566a", /* black   */
+	"#bf616a", /* red     */
+	"#a3be8c", /* green   */
+	"#ebcb8b", /* yellow  */
+	"#81a1c1", /* blue    */
+	"#b48ead", /* magenta */
+	"#8fbcbb", /* cyan    */
+	"#eceff4", /* white   */
 
-
-
-//start rosepine theme
-
-	/* 8 normal colors */
-//	"#3b4252", /* black   */
-//	"#eb6f92", /* red     */
-//	"#9ccfd8", /* green   */
-//	"#f6c177", /* yellow  */
-//	"#31748f", /* blue    */
-//	"#c4a7e7", /* magenta */
-//	"#ebbcba", /* cyan    */
-//	"#e0def4", /* white   */
-
-	/* 8 bright colors */
-//	"#6e6a86", /* black   */
-//	"#eb6f92", /* red     */
-//	"#9ccfd8", /* green   */
-//	"#f6c177", /* yellow  */
-//	"#31748f", /* blue    */
-//	"#c4a7e7", /* magenta */
-//	"#ebbcba", /* cyan    */
-//	"#e0def4", /* white   */
-//	above is rosepine
-
-
-
-//start dracula theme
-
-  /* 8 normal colors */
-	"#000000", /* black   */
-	"#ff5555", /* red     */
-	"#50fa7b", /* green   */
-	"#f1fa8c", /* yellow  */
-	"#bd93f9", /* blue    */
-	"#ff79c6", /* magenta */
-	"#8be9fd", /* cyan    */
-	"#bbbbbb", /* white   */
-
-  /* 8 bright colors */
-	"#44475a", /* black   */
-	"#ff5555", /* red     */
-	"#50fa7b", /* green   */
-	"#f1fa8c", /* yellow  */
-	"#bd93f9", /* blue    */
-	"#ff79c6", /* magenta */
-	"#8be9fd", /* cyan    */
-	"#ffffff", /* white   */
-//	above is dracula
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-//	"#2e3440", /* background nord*/ 
-//	"#d8dee9", /* foreground nord */
-//	"#191724", /* background rosepine*/ 
-//	"#e0def4", /* foreground rosepine */
-	"#282a36", /* background dracula */
-	"#f8f8f2", /* foreground dracula*/
-
+	"#2e3440", /* background */
+	"#d8dee9", /* foreground */
 	"gray90", /* default foreground colour */
 	"black", /* default background colour */
 };
@@ -260,7 +202,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,   		XK_Up,     	kscrollup,      {.i = -1} },
+	{ShiftMask,    		XK_Up,     	kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ ShiftMask,    	XK_Down,	kscrolldown,    {.i = -1} },
@@ -526,6 +468,11 @@ static Key key[] = {
 static uint selmasks[] = {
 	[SEL_RECTANGULAR] = Mod1Mask,
 };
+
+
+static const char *colorname[] = {
+#include "/home/nabeel/apps/suckless/st/themes/rosepine.h"
+}
 
 /*
  * Printable characters in ASCII, used to estimate the advance width
