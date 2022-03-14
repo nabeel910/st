@@ -95,7 +95,7 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-#include "/home/nabeel/apps/suckless/st/themes/dracula.h"
+#include "/home/nabeel/apps/suckless/st/themes/catppuccin.h"
 };
 
 
